@@ -10,25 +10,25 @@
 
 # DESCRIPTION
 
-***paneless*** reads its input stream from its arguments (no piping), format them to fit the terminal, and colors them. Processing multiple large inputs may take time to process, so does input that contains ANSI color codes. 
+***paneless*** reads its input stream from its arguments (no piping), formats them to fit the terminal, and colors them. Processing multiple large inputs may take time to process, and so does input that contains ANSI color codes.
 
 Once processed vertical scrolling is fast; horizontal scrolling re-processes all the inputs.
 
-I also use paneless as frontend for https://github.com/nkh/tdiff and https://github.com/nkh/tcol via a simple API which you might find convenient.
+I also use paneless as a frontend for https://github.com/nkh/tdiff and https://github.com/nkh/tcol via a simple API which you might find convenient.
 
 ## ANSI
 
-*paneless* will display files that contain ANSI codes,f you use the *--ansi* option. You will need to install *ansiexpand* for proper tab expansion.
+*paneless* will display files that contain ANSI codes, if you use the *--ansi* option. You will need to install *ansiexpand* for proper tab expansion.
 
 ## Options
 
 | short      | long          | function                                         |
 | ---------- | ------------- | ------------------------------------------------ |
-| -a         | --ansi        | input contains ANSI color code                   |
+| -a         | --ansi        | input contains ANSI color codes                  |
 | -c file    | --custom=file | add custom commands                              |
-| -C column  |               | colum has custom renderer                        |
+| -C column  |               | column has custom renderer                       |
 | -e="k=v"   |               | store option for custom commands                 |
-| -I         |               |  custom initial content                          |
+| -I         |               | custom initial content                           |
 | -l         | --line-number | overlay the top line number                      |
 | -L         |               | overlay the bottom line number                   |
 |            | --no-bindings | 'quit' bindings only                             |
@@ -47,11 +47,11 @@ I also use paneless as frontend for https://github.com/nkh/tdiff and https://git
 | c       | show command bindings          |
 | r       | refresh                        |
 | R       | reload                         |
-| CTL-B   | page down                      |
-| PGUP    | page down                      |
-| SPACE   | page up                        |
-| PGDN    | page up                        |
-| CTL-F   | page up                        |
+| CTL-B   | page up                        |
+| PGUP    | page up                        |
+| SPACE   | page down                      |
+| PGDN    | page down                      |
+| CTL-F   | page down                      |
 | j       | scroll down                    |
 | k       | scroll up                      |
 | DOWN    | scroll down                    |
@@ -62,7 +62,7 @@ I also use paneless as frontend for https://github.com/nkh/tdiff and https://git
 | RIGHT   | move right                     |
 | h       | move left                      |
 | LEFT    | move left                      |
-| /       | searn                          |
+| /       | search                         |
 | n       | find next                      |
 | N       | find previous                  |
 | gff     | fzf find                       |
@@ -92,7 +92,7 @@ You can change the color used by *paneless* as well as the bindings (vim-like by
     Khemir Nadim ibn Hamouda
     https://github.com/nkh
     CPAN ID: NKH
-    
+
 # LICENCE
 
 	© Nadim Khemir 2023, Artistic licence 2.0
